@@ -54,6 +54,12 @@ ml_cluster <- function(object, methods, ...) {
     }
 }
 
+# 社区检测
+ml_community_infomap <- function(...) {
+    next
+}
+
+
 # 双聚类
 ml_bicluster <- function(...) {
     next

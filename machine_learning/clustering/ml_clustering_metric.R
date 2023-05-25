@@ -8,7 +8,7 @@ cal_entropy <- function(x) {
 ARI_matric <- function(x, y) {
     x <- factor(x)
     y <- factor(y)
-    return(adjustedRandIndex(x, y))
+    return(mclust::adjustedRandIndex(x, y))
 }
 
 ml_cluster_metric <- function(..., methods) {

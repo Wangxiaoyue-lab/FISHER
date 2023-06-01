@@ -5,7 +5,7 @@
 # ml_norm_vector_lmax
 
 # 2 matrix norm
-## 2.1 induced norm诱导范数/算子范数 | 与向量作乘法度量矩阵作为线性变换时对向量的影响
+## 2.1 induced norm诱导范数/算子范数 | 与向量作乘法度量矩阵作为线性变换时对向量的影响(放大性)
 ## Lp/Minkowskip
 ## 2.1.1 L1/column
 ml_norm_induced_l1 <- function(mat) {
@@ -36,7 +36,7 @@ ml_norm_entrywise_lmax <- function(mat) {
     return(max(abs(mat)))
 }
 
-## 2.3 schatten范数 | 矩阵奇异值σ向量的范数
+## 2.3 schatten范数 | 矩阵奇异值σ向量的范数，用以解决低秩问题
 ## Lp/Minkowskip
 ml_norm_schatten_lp <- function(mat, p) {
     sigma <- svd(mat)$d
